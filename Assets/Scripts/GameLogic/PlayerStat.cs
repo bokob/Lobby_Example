@@ -32,7 +32,20 @@ public class PlayerStat : NetworkBehaviour
         if (other.gameObject.CompareTag("Punch") && transform.root.GetComponent<NetworkObject>().OwnerClientId != other.transform.root.GetComponent<NetworkObject>().OwnerClientId)
         {
             GetComponent<PlayerStat>().hp.Value -= 50;
-            animator.SetTrigger("isAttacked");
+            PlayAttackedAnimationClientRpc();
         }
+    }
+
+
+    IEnumerator Attacked()
+    {
+        animator.SetTrigger("isAttacked");
+        yield return null;
+    }
+
+    [ClientRpc]
+    void PlayAttackedAnimationClientRpc()
+    {
+        StartCoroutine(Attacked());
     }
 }

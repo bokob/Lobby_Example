@@ -42,12 +42,6 @@ public class PlayerAttack : NetworkBehaviour
         SetPunchColliderStateServerRpc(false);
     }
 
-    IEnumerator Attacked()
-    {
-        animator.SetTrigger("isAttacked");
-        yield return null;
-    }
-
     // punchCollider 상태를 서버에 요청하는 ServerRpc 메서드
     [ServerRpc]
     void SetPunchColliderStateServerRpc(bool state)
