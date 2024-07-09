@@ -6,16 +6,13 @@ using Unity.Services.Lobbies.Models;
 
 public class PlayerMovement : NetworkBehaviour
 {
-    [SerializeField]
-    Transform cam;
+    [SerializeField] Transform cam;
 
-    [SerializeField]
-    Transform player;
+    [SerializeField] Transform player;
 
     Animator animator;
 
-    [SerializeField]
-    float moveSpeed = 3f;
+    [SerializeField] float moveSpeed = 3f;
 
     private void Start()
     {

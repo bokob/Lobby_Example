@@ -13,8 +13,6 @@ public class NetworkGameManager : NetworkBehaviour
     public delegate void OnPlayerDataListChanged();                 // 플레이어 데이터 목록이 변경될 때 호출되는 델리게이트
     public static OnPlayerDataListChanged onPlayerDataListChanged;
 
-    public GameObject myPlayer; // only set when ingame;
-
     string username;    // 플레이어 사용자명 보관
 
     // 게임 현재 상태

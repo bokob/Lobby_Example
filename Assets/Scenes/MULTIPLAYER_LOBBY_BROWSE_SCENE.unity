@@ -1831,6 +1831,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   GlobalObjectIdHash: 3190995074
+  InScenePlacedSourceGlobalObjectIdHash: 0
   AlwaysReplicateAsRoot: 0
   SynchronizeTransform: 0
   ActiveSceneSynchronization: 0
@@ -1852,7 +1853,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerPrefab: {fileID: 4910698831366568313, guid: b2aae0a371dc37e4dbecc39538351d44,
     type: 3}
-  myPlayer: {fileID: 2604444545282218167, guid: b2aae0a371dc37e4dbecc39538351d44,
+  myPlayer: {fileID: 4910698831366568313, guid: b2aae0a371dc37e4dbecc39538351d44,
     type: 3}
   gameState:
     m_InternalValue: 0
@@ -3556,7 +3557,8 @@ MonoBehaviour:
   NetworkConfig:
     ProtocolVersion: 0
     NetworkTransport: {fileID: 1821826315}
-    PlayerPrefab: {fileID: 0}
+    PlayerPrefab: {fileID: 4910698831366568313, guid: b2aae0a371dc37e4dbecc39538351d44,
+      type: 3}
     Prefabs:
       NetworkPrefabsLists:
       - {fileID: 11400000, guid: fb1c5e7fa3f33f547b614d2e14b0a46c, type: 2}
